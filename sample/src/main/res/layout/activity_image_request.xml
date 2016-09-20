@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imvAnchor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Image Anchor"/>
+
+        <com.vincestyling.netroid.widget.NetworkImageView
+            android:id="@+id/imvNetwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnLoadSingleImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Normal Loading"/>
+
+        <Button
+            android:id="@+id/btnImageLoaderHttp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NetworkImageView Loading"/>
+
+        <Button
+            android:id="@+id/btnImageLoaderAssets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Assets Loading"/>
+
+        <Button
+            android:id="@+id/btnImageLoaderSdcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sdcard Loading"/>
+
+        <Button
+            android:id="@+id/btnGridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GridView P0 Loading"/>
+
+    </LinearLayout>
+
+</ScrollView>

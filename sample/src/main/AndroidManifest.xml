@@ -1,0 +1,74 @@
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vincestyling.netroid.sample">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CommonHttpRequestActivity"
+            android:label="CommonHttpRequest">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ImageRequestActivity"
+            android:label="ImageRequest">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".BatchImageRequestDiskActivity"
+            android:label="Batch Image Loader - Disk Cache">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".BatchImageRequestMemActivity"
+            android:label="Batch Image Loader - Memory Cache">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".BatchImageRequestMultCacheActivity"
+            android:label="Batch Image Loader - Dual Caches">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".GridViewActivity"
+            android:label="GridView.getView(position == 0) issue"/>
+
+        <activity
+            android:name=".FileDownloadActivity"
+            android:label="File Downloader"/>
+
+        <activity
+            android:name=".OffWithMainThreadPerformingActivity"
+            android:label="OffWithMainThreadPerforming"/>
+    </application>
+
+</manifest>

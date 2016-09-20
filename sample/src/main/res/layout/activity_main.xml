@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnCommonHttpRequest"
+            android:text="Common Http Request"
+            style="@style/main_btn"/>
+
+        <Button
+            android:id="@+id/btnImageRequest"
+            android:text="Image Request"
+            style="@style/main_btn"/>
+
+        <Button
+            android:id="@+id/btnBatchImageMem"
+            android:text="Batch Image Loader - Only enable Memory Cache"
+            style="@style/main_btn"/>
+
+        <Button
+            android:id="@+id/btnBatchImageDisk"
+            android:text="Batch Image Loader - Only enable Disk Cache"
+            style="@style/main_btn"/>
+
+        <Button
+            android:id="@+id/btnBatchImageMultCache"
+            android:text="Batch Image Loader - enable Memory and Disk Cache"
+            style="@style/main_btn"/>
+
+        <Button
+            android:id="@+id/btnFileDownload"
+            android:text="File Downloader"
+            style="@style/main_btn"/>
+
+        <Button
+            android:id="@+id/btnBlockingRequest"
+            android:text="Off With Main Thread Performing"
+            style="@style/main_btn"/>
+
+    </LinearLayout>
+
+</ScrollView>
